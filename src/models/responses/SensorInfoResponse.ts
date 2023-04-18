@@ -7,6 +7,7 @@ export class SensorInfoResponse {
     public outdoorTemperature?: number;
     public error?: number;
     public cmpfreq?: number;
+    public mompow?: number;
 
     public static parseResponse(dict: ResponseDict, cb: DaikinResponseCb<SensorInfoResponse>): void {
         const result = new SensorInfoResponse();

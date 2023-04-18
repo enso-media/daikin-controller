@@ -15,6 +15,7 @@ export class SensorInfoResponse {
         result.outdoorTemperature = DaikinDataParser.resolveFloat(dict, 'otemp');
         result.error = DaikinDataParser.resolveInteger(dict, 'err');
         result.cmpfreq = DaikinDataParser.resolveInteger(dict, 'cmpfreq');
+        result.mompow = DaikinDataParser.resolveInteger(dict, 'mompow');
         cb(null, 'OK', result);
     }
 }
